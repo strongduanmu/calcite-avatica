@@ -225,7 +225,7 @@ public abstract class MetaImpl implements Meta {
   }
 
   public static ColumnMetaData columnMetaData(String name, int index, AvaticaType type,
-                                              boolean columnNullable, boolean signed) {
+      boolean columnNullable, boolean signed) {
     return columnMetaData(name, index, type, intForColumnNullable(columnNullable), signed);
   }
 
@@ -245,7 +245,7 @@ public abstract class MetaImpl implements Meta {
   }
 
   public static ColumnMetaData columnMetaData(String name, int index, AvaticaType type,
-                                              int columnNullable, boolean signed) {
+      int columnNullable, boolean signed) {
     return new ColumnMetaData(
         index, false, true, false, false,
         columnNullable,

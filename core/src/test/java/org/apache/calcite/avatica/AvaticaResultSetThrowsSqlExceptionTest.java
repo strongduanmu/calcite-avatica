@@ -146,8 +146,6 @@ public class AvaticaResultSetThrowsSqlExceptionTest {
         resultSet.getShort(index);
         break;
       case 4: // MEDIUMINT
-        resultSet.getInt(index);
-        break;
       case 5: // INTEGER
         resultSet.getInt(index);
         break;

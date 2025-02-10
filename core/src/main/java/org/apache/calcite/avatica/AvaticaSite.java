@@ -291,7 +291,7 @@ public class AvaticaSite {
 
   /** Similar logic to {@link #setObject}. */
   public static Object get(Cursor.Accessor accessor, int targetSqlType,
-                           boolean signed, Calendar localCalendar) throws SQLException {
+      boolean signed, Calendar localCalendar) throws SQLException {
     switch (targetSqlType) {
     case Types.CLOB:
     case Types.DATALINK:
